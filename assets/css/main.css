@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-family: "Jost", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.customGrid {
+    display: grid;
+    grid-template-columns: 40% auto;
+    justify-content: space-between;
+    height: calc(100vh - 184px);
+}
+
+.customShadow {
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.482);
+}
+
+.catsGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3rem;
+    margin-right: 7rem;
+}
+
+.customImageBigPicture {
+    width: 43.75rem;
+    height: 43.75rem;
+}
+
+.customImageMidPicture {
+    width: 15.625rem;
+    height: 18.75rem;
+}
+
+.customImageLittlePicture {
+    width: 15.625rem;
+    height: 21.875rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .customGrid {
+        height: calc(100vh - 112px);
+    }
+
+    .customResponsive {
+        padding: 3rem 0;
+    }
+
+    .customResponsive h1 {
+        font-size: 4rem;
+    }
+
+    .customResponsiveText {
+        margin-left: 2rem;
+        margin-top: 4rem;
+    }
+
+    .customResponsiveText h2 {
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+    }
+
+    .customResponsiveText p {
+        font-size: 1.3rem;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+    }
+
+    .catsGrid {
+        gap: 1rem;
+        margin-right: 2rem;
+        margin-top: 2rem;
+    }
+
+    .customImageBigPicture {
+        width: 25rem;
+        height: 25rem;
+    }
+    
+    .customImageMidPicture {
+        width: 9rem;
+        height: 11rem;
+        margin-bottom: 1rem;
+    }
+    
+    .customImageLittlePicture {
+        width: 9rem;
+        height: 13rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .customGrid {
+        height: calc(100vh - 168px);
+    }
+
+    .customResponsive {
+        padding: 3rem 0;
+    }
+
+    .customResponsiveText h2 {
+        margin-bottom: 3rem;
+    }
+
+    .customResponsiveText p {
+        font-size: 1.7rem;
+        margin-bottom: 3rem;
+    }
+
+    .customImageBigPicture {
+        width: 30rem;
+        height: 30rem;
+    }
+    
+    .customImageMidPicture {
+        width: 10rem;
+        height: 13rem;
+        margin-bottom: 2rem;
+    }
+    
+    .customImageLittlePicture {
+        width: 10rem;
+        height: 15rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .customImageBigPicture {
+        width: 38rem;
+        height: 38rem;
+    }
+    
+    .customImageMidPicture {
+        width: 14rem;
+        height: 16rem;
+    }
+    
+    .customImageLittlePicture {
+        width: 14rem;
+        height: 19rem;
+    }
+}
