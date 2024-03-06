@@ -5,7 +5,7 @@
         Cat Fact:
       </h2>
       <p
-        class="text-mid-purple text-3xl pr-20 mb-24"
+        class="text-mid-purple text-3xl pr-20 mb-24 animation"
         v-if="catfacts?.catfact"
         :key="index"
       >

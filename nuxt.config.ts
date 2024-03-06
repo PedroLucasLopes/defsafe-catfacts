@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   modules: [
     ["@nuxtjs/google-fonts", { families: { Jost: true } }],
     "@pinia/nuxt",
+    "@nuxt/test-utils/module",
   ],
   components: [{ path: "~/shared/icons", prefix: "Icon" }, "~/components"],
   runtimeConfig: {

@@ -42,7 +42,19 @@
     height: 21.875rem;
 }
 
-@media screen and (max-width: 1024px) {
+.animation {
+    animation: fadeIn .5s ease-in
+}
+
+@keyframes fadeIn {
+    0% {
+        color: transparent;
+    } 100% {
+        color: #4A4E69
+    }
+}
+
+@media screen and (max-width: 1279px) {
     .customGrid {
         height: calc(100vh - 112px);
     }
