@@ -42,16 +42,14 @@
     height: 21.875rem;
 }
 
-.animation {
-    animation: fadeIn .5s ease-in
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 0.5s, max-height 0.5s;
 }
 
-@keyframes fadeIn {
-    0% {
-        color: transparent;
-    } 100% {
-        color: #4A4E69
-    }
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 1279px) {
