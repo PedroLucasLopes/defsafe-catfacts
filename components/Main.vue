@@ -6,14 +6,14 @@
       </h2>
       <p
         class="text-mid-purple text-3xl pr-20 mb-24 animation"
-        v-if="catfacts?.catfact"
+        v-if="catfacts"
         :key="index"
       >
-        {{ catfacts?.catfact }}
+        {{ catfacts }}
       </p>
       <button
         class="bg-mid-purple w-80 h-14 transition-colors duration-300 ease-in-out hover:bg-dark-purple text-light-beige text-lg font-bold uppercase py-2 px-4 border border-mid-purple rounded-lg customShadow flex justify-center gap-3 pt-3"
-        @click="this.$router.go()"
+        @click="fetchCatFact()"
       >
         <IconRefresh />
         Get a Random Cat Fact
@@ -44,7 +44,14 @@
 </template>
 
 <script setup>
-const { data: catfacts } = await useAsyncData("catfacts", () => {
-  return $fetch("/api/catfacts", { method: "get" });
-});
+const catfacts = ref(null);
+const fetchCatFact = async () => {
+  try {
+    const response = await $fetch("/api/catfacts", { method: "get" });
+    catfacts.value = response.catfact;
+  } catch (error) {
+    console.error("Error to fetch API data", error);
+  }
+};
+onMounted(fetchCatFact);
 </script>
