@@ -1,75 +1,26 @@
-# Nuxt 3 Minimal Starter
+# 🐱 CatFacts by DefSafe
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Catfacts is a project conceived by DefSafe with the aim of assessing the technical skills of future developers for the company's team. The goal here is to display data about cat trivia from an API called Catfacts, where randomly fetched information is presented on an interface for the developer.
 
-## Setup
+## ⚙️ Executing the tests
 
-Make sure to install the dependencies:
+To run the application tests, simply execute the command yarn run ``test:unit`` in your terminal.
 
-```bash
-# npm
-npm install
+## 🤓 Technologies
 
-# pnpm
-pnpm install
+Mencione as ferramentas que você usou para criar seu projeto
 
-# yarn
-yarn install
+* [Nuxt](https://nuxt.com) - Web Framework Tool
+* [Vitest](https://vitest.dev) - Test
+* [VueJS](https://vuejs.org) - Web Framework
 
-# bun
-bun install
-```
+## ✒️ Author
+* **Fullstack Developer** - [Pedro Lucas Lopes Paraguai](https://github.com/PedroLucasLopes)
 
-## Development Server
+## 🎁 Thanks
 
-Start the development server on `http://localhost:3000`:
+* DefSafe for knowledge testing and recognition 📢;
 
-```bash
-# npm
-npm run dev
 
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+---
+⌨️ with ❤️ by [Pedro Lucas](https://github.com/PedroLucasLopes) 😊
